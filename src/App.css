@@ -21,6 +21,16 @@
   to { opacity: 1; }
 }
 
+@keyframes shadow {
+  from { box-shadow: none; }
+  to { box-shadow: 5px 5px 18px #1f1e38; }
+}
+
+@keyframes shadowOut {
+  from { box-shadow: 5px 5px 18px #1f1e38; }
+  to { box-shadow: none; }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -346,6 +356,12 @@ a {
   height: auto;
   margin: 1rem;
   border-radius: 10px;
+  animation: 1s ease-out 0s 1 shadowOut;
+}
+
+.codePics:hover {
+  box-shadow: 5px 5px 18px #1f1e38;
+  animation: 1s ease-out 0s 1 shadow;
 }
 
 .about {
