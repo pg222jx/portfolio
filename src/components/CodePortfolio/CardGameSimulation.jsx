@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import cardGamePic from '../../images/cardGame.JPG'
+import cardGamePic from '../../images/CardGame.JPG'
 
 class CardGameSimulation extends Component {
     state = {  }
