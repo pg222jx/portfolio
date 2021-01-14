@@ -341,12 +341,12 @@ a {
   transform: translate(20px, 0px);
 }
 
-.codePics {
+/* .codePics {
   height: 15rem;
   margin: 1rem;
   border-radius: 10px;
   opacity: 90%;
-}
+} */
 
 .about {
   background-color: var(--overlay-color);
