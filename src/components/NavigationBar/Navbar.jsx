@@ -25,7 +25,7 @@ class Navbar extends Component {
                             <ul className="nav">
                                 <li onClick={uncheck}><Link to="/">》Home</Link></li>
                                 <li onClick={uncheck}><Link to="/about">》About</Link></li>
-                                <li onClick={uncheck}><Link to="/code">》Portfolio Code</Link></li>
+                                <li onClick={uncheck}><Link to="/code">》Coding projects</Link></li>
                                 <li onClick={uncheck}><Link to="/contact">》Contact</Link></li>
                                 {/* <li onClick={uncheck}><Link to="/creativity">Portfolio Creativity</Link></li> */}
                                 {/* <li onClick={uncheck}><Link to="/diary">Diary</Link></li> */}

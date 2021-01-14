@@ -5,10 +5,6 @@ import Pandemaniac from './CodePortfolio/Pandemaniac'
 import CardGameSimulation from './CodePortfolio/CardGameSimulation'
 
 class Code extends Component {
-  // componentDidMount() {
-  //   const code = document.querySelector('.code')
-  //   code.style.opacity = 1
-  // }
 
     render() {
       const scrollDown = () => {
