@@ -11,7 +11,7 @@ class Portfolio extends Component {
               <img src={portfolioPic} alt="Pernilla Göth" className="codePics"/>
               <p>This portfolio, that you are currently in, was mainly created to showcase my personal projects.<br/>
               When I started to code this website I wanted to practice working with both React.js and Express.js. <br/>
-              I am only using React in this moment but have a plan to add a database to store future blogposts. <br/>
+              I am only using React in this moment but have plans to add a MongoDB database to store future blogposts. <br/>
               When that is happening I will use Express and Node.<br/>
               This project also made me more aware of the complexity in CSS and that piqued my interest in it. <br/>
               The portfolio will be an ongoing project and will therefore be changed and added to.

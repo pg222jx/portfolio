@@ -296,10 +296,10 @@ a {
 }
 
 .profilePic {
-  height: 15rem;
+  max-width: 23%;
+  height: auto;
   margin: 1rem;
   border-radius: 10px;
-  /* opacity: 90%; */
   transition: transform .5s;
 }
 
@@ -342,10 +342,11 @@ a {
 }
 
 .codePics {
-  height: 15rem;
+  max-width: 50%;
+  min-width: 20%;
+  height: auto;
   margin: 1rem;
   border-radius: 10px;
-  /* opacity: 90%; */
 }
 
 .about {
@@ -355,4 +356,6 @@ a {
   border-radius: 10px;
   padding: 2rem;
   text-align: left;
+  overflow:scroll;
 }
+

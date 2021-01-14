@@ -8,7 +8,7 @@ class Header extends Component {
         return (
             <header className="showcase">
             <div className="container showcase-inner">
-              <h1>- Pernilla Göth - </h1>
+              <h1>Pernilla Göth</h1>
               <p>Combining a passion for creativity with a degree in fullstack web development</p> 
               <Link to="/code" className="btn">Personal projects</Link>
             </div>
