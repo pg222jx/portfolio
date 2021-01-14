@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import portfolioPic from '../../images/Website.JPG'
+import portfolioPic from '../../images/Website.jpg'
 
 class Portfolio extends Component {
     state = {  }
