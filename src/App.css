@@ -356,6 +356,6 @@ a {
   border-radius: 10px;
   padding: 2rem;
   text-align: left;
-  overflow:scroll;
+  overflow:auto;
 }
 
