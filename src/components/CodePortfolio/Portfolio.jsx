@@ -17,7 +17,7 @@ class Portfolio extends Component {
               The portfolio will be an ongoing project and will therefore be changed and added to.
               </p><br/>
               <p>JavaScript, React, HTML, CSS</p>
-              <a href="https://github.com/pg222jx/pernillagoeth/tree/master/portfolio" className="btn">Source code</a>
+              <a href="https://github.com/pg222jx/portfolio" className="btn">Source code</a>
             </div>
         )
     }
