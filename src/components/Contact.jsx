@@ -9,7 +9,7 @@ class Contact extends Component {
             <div className="container showcase-inner">
               <h1>Contact</h1>
               <p>Email: <a href="mailto:pernilla.goeth@gmail.com">pernilla.goeth@gmail.com</a></p>
-              <p>LinkedIn: <a href="https://www.linkedin.com/in/pernilla-g%C3%B6th-69027319b/">Profile</a></p>
+              <p>LinkedIn: <a href="https://www.linkedin.com/in/pernilla-g%C3%B6th/">Profile</a></p>
             </div>
           </header>
         )
