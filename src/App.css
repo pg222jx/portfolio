@@ -299,7 +299,7 @@ a {
   height: 15rem;
   margin: 1rem;
   border-radius: 10px;
-  opacity: 90%;
+  /* opacity: 90%; */
   transition: transform .5s;
 }
 
