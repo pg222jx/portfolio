@@ -14,7 +14,7 @@ class PHPBlog extends Component {
               I had heard a lot of bad things about PHP and this project made me understand why. <br/>
               However even if the structure of the language isn't always to my taste, I actually really liked how it made my brain work in ways it hadn't before. <br/>
               In this project I coded towards automated tests and finally ended upp with just below 100% coverage.</p><br/>
-              <p>PHP</p>
+              <p>PHP, HTML, CSS</p>
               <a href="https://1dv610assignment2.000webhostapp.com/" className="btn">Live</a>
               <a href="https://github.com/pg222jx/SimpleBlogWithPHP" className="btn">Source code</a>
               <p> </p>

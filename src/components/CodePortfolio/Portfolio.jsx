@@ -16,7 +16,7 @@ class Portfolio extends Component {
               This project also made me more aware of the complexity in CSS and that piqued my interest in it. <br/>
               The portfolio will be an ongoing project and will therefore be changed and added to.
               </p><br/>
-              <p>JavaScript, React</p>
+              <p>JavaScript, React, HTML, CSS</p>
               <a href="https://github.com/pg222jx/pernillagoeth/tree/master/portfolio" className="btn">Source code</a>
             </div>
         )

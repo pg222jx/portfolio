@@ -13,7 +13,7 @@ class Pandemaniac extends Component {
               This game was inspired by the board game Pandemania and the app plague.inc. <br/>
               It was my first ever experience with React.js and it left me wanting to learn more. <br/>
               This project also gave me a chance to play around in Adobe Illustrator which always is very fun! </p><br/>
-              <p>JavaScript, React, Node, Firebase</p>
+              <p>JavaScript, React, Node, Firebase, HTML, CSS</p>
               <a href="https://pandemaniac-afc6f.web.app/" className="btn">Live</a>
               <a href="https://github.com/pg222jx/Pandemaniac" className="btn">Source code</a>
              
