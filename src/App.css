@@ -1,0 +1,358 @@
+:root {
+  --primary-color: rgba(75, 86, 110, 0.70);
+  --overlay-color: rgba(75, 86, 110, 0.95);
+  --primaryBackground-color: #222938;
+  --menu-speed: 0.85s;
+  --primary-font: Light;
+  --primary-fontColor: #70738a;
+}
+
+/* color palette
+
+#131720
+#4b566e
+#d6cbd0
+#8e96ad
+#70738a */
+
+/* Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primaryBackground-color);
+}
+
+a {
+  color:  var(--primary-font)
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3 rem;
+  font-family: var(--primary-font);
+  letter-spacing: 2px
+}
+
+.showcase {
+  background-color: var(--primary-color);
+  height: 100vh;
+  position: relative;
+  box-shadow: inset 0px -15px 8px -8px var(--primaryBackground-color);
+}
+
+.showcase:before {
+  content:'';
+  background: url(./images/painting.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.showcase .showcase-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.showcase-inner {  
+  animation: 1.5s ease-in 0s 1 fadeIn;
+  padding: 30px;
+}
+
+.showcase-outer a {  
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+
+.showcase .showcase-outer {
+  color: #1f1e38;
+  text-align: center;
+  background-color: var(--primaryBackground-color);
+  margin-bottom: 10rem;
+  margin-top: 5rem;
+  position:relative;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  letter-spacing: 4px
+}
+
+.showcase h2 {
+  font-size: 3rem;
+  letter-spacing: 4px
+}
+
+.showcase p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  transition: opacity 0.5s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* MENU AREA */
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #d6cbd0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit; 
+}
+
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Menu checked */
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  /* transition-duration: var(--menu-speed); */
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  /* transition: opacity 0.4s ease; */
+}
+
+/* Testa ta bort display flex i den under - kanske i senare iteration? */
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--overlay-color);
+  /* background: url(./images/computer.jpg) no-repeat center center/cover;; */
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+  font-family: var(--primary-font);
+  letter-spacing: 2px;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+/* Forms */
+
+.blogForm {
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align:center;
+}
+
+.titleInput, .contentInput, .dateInput {
+  width: 40rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+}
+
+.contentInput {
+  height: 20rem;
+}
+
+.submitBtn {
+  border: 0;
+  border-radius: 5px;
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+  padding: 0.5rem;
+}
+
+.codePortfolio {
+  background-color: rgba(75, 86, 110, 0.3);
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem;
+  color:whitesmoke;
+}
+
+.profilePic {
+  height: 15rem;
+  margin: 1rem;
+  border-radius: 10px;
+  opacity: 90%;
+  transition: transform .5s;
+}
+
+.profilePic:hover{
+  transform: scale(2.5) translate(-130px, 25px);
+}
+
+.arrowDown {
+  font-size: 90px;
+  transition: transform .5s;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.arrowDown:hover{
+  transform: translate(0px, 50px);
+}
+
+.arrowUp {
+  font-size: 90px;
+  transition: transform .5s;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.arrowUp:hover{
+  transform: translate(0px, -50px);
+}
+
+.nav li{
+  transition: transform .2s;
+}
+
+.nav li:hover{
+  transform: translate(20px, 0px);
+}
+
+.codePics {
+  height: 15rem;
+  margin: 1rem;
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+.about {
+  background-color: var(--overlay-color);
+  border: solid;
+  border-color: whitesmoke;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: left;
+}
