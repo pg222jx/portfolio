@@ -6,7 +6,7 @@ class Blog extends Component {
 
     render() { 
         return (
-            <header className="showcase">
+            // <header className="showcase">
             <div className="container showcase-inner">
               <div className="about">
               <h1>About me</h1>
@@ -23,7 +23,7 @@ class Blog extends Component {
               <a href="https://docs.google.com/document/d/16SugJKIyc6cJPo5Wt9CwZe1q5FzU_559Xre8Td7LnCQ/edit#heading=h.61e3cm1p1fln" target="_blanc" className="btn">Resume</a>
               </div>
             </div>
-          </header>
+          // </header>
         )
     }
 }

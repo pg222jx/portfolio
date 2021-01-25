@@ -19,7 +19,7 @@ import PostList from './components/PostList'
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="showcase">
         <Navbar/>
         <Switch>
         <Route path="/posts" exact component={PostList} />

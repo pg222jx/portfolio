@@ -5,13 +5,13 @@ class Contact extends Component {
 
     render() { 
         return (
-            <header className="showcase">
+            // <header className="showcase">
             <div className="container showcase-inner">
               <h1>Contact</h1>
               <p>Email: <a href="mailto:pernilla.goeth@gmail.com">pernilla.goeth@gmail.com</a></p>
               <p>LinkedIn: <a href="https://www.linkedin.com/in/pernilla-g%C3%B6th/">Profile</a></p>
             </div>
-          </header>
+          // </header>
         )
     }
 }

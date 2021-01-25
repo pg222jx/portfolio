@@ -10,7 +10,7 @@ class Code extends Component {
       } 
 
         return (
-            <header className="showcase">
+            // <header className="showcase">
               <div className="hello">
             <div className="container showcase-inner">
               <h1>Coding projects</h1>
@@ -23,7 +23,7 @@ class Code extends Component {
             <CodeProjects/>
             </div>
 
-          </header>
+          // </header>
         )
     }
 }
