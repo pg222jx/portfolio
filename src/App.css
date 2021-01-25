@@ -38,7 +38,18 @@
 }
 
 body {
-  background-color: var(--primaryBackground-color);
+  /* background-color: var(--primaryBackground-color); */
+  background: url(./images/painting.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+}
+
+body::before{
+  background-color: var(--primary-color);
+  content: '';
+  display: block;
+  height: 100%;
+  position: fixed;
+  width: 100%;
 }
 
 a {
@@ -54,25 +65,24 @@ a {
   letter-spacing: 2px
 }
 
+
 .showcase {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   height: 100vh;
   position: relative;
   /* box-shadow: inset 0px -15px 8px -8px var(--primaryBackground-color); */
 }
 
-.showcase:before {
-  content:'';
+/* .showcase:before {
+  content:''; */
   /* background: url(./images/painting.jpg) no-repeat center center/cover; */
-  background: url(./images/painting.jpg) no-repeat center/cover;
-  background-attachment: fixed;
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-}
+  
+} */
 
 .showcase .showcase-inner {
   display: flex;
@@ -97,7 +107,7 @@ a {
 .showcase .showcase-outer {
   color: #1f1e38;
   text-align: center;
-  background-color: var(--primaryBackground-color);
+  /* background-color: var(--primaryBackground-color); */
   margin-bottom: 10rem;
   margin-top: 5rem;
   position:relative;
@@ -213,7 +223,6 @@ a {
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  /* transition: opacity 0.4s ease; */
 }
 
 /* Testa ta bort display flex i den under - kanske i senare iteration? */
@@ -233,7 +242,6 @@ a {
 
 .menu-wrap .menu > div {
   background: var(--overlay-color);
-  /* background: url(./images/computer.jpg) no-repeat center center/cover;; */
   border-radius: 50%;
   width: 200vw;
   height: 200vw;
@@ -300,8 +308,9 @@ a {
 }
 
 .codePortfolio {
-  background-color: rgba(75, 86, 110, 0.3);
-  border-radius: 10px;
+  /* background-color: rgba(75, 86, 110, 0.80); */
+  border-top: solid whitesmoke;
+  /* border-radius: 4px; */
   margin-top: 2rem;
   padding: 1rem;
   color:whitesmoke;
@@ -357,7 +366,7 @@ a {
   min-width: 20%;
   height: auto;
   margin: 1rem;
-  border-radius: 10px;
+  border-radius: 4px;
   animation: 1s ease-out 0s 1 shadowOut;
 }
 
@@ -367,12 +376,8 @@ a {
 }
 
 .about {
-  /* background-color: var(--overlay-color);
-  border: solid; */
-  /* border-color: whitesmoke; */
   border-radius: 10px;
   padding: 2rem;
-  /* text-align: left; */
   overflow:auto;
 }
 
