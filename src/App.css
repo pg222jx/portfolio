@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgba(75, 86, 110, 0.70);
+  --primary-color: rgba(75, 86, 110, 0.50);
   --overlay-color: rgba(75, 86, 110, 0.95);
   --primaryBackground-color: #222938;
   --menu-speed: 0.85s;
@@ -58,12 +58,14 @@ a {
   background-color: var(--primary-color);
   height: 100vh;
   position: relative;
-  box-shadow: inset 0px -15px 8px -8px var(--primaryBackground-color);
+  /* box-shadow: inset 0px -15px 8px -8px var(--primaryBackground-color); */
 }
+
 
 .showcase:before {
   content:'';
   background: url(./images/painting.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
   position: absolute;
   top: 0;
   left: 0;
