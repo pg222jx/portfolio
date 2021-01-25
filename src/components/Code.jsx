@@ -11,6 +11,7 @@ class Code extends Component {
 
         return (
             <header className="showcase">
+              <div className="hello">
             <div className="container showcase-inner">
               <h1>Coding projects</h1>
               <p>I will highlight some of my personal coding projects below.<br/>
@@ -20,6 +21,8 @@ class Code extends Component {
               <button className="arrowDown" onClick={scrollDown}>︾</button>
             </div>
             <CodeProjects/>
+            </div>
+
           </header>
         )
     }

@@ -67,10 +67,8 @@ a {
 
 
 .showcase {
-  /* background-color: var(--primary-color); */
   height: 100vh;
   position: relative;
-  /* box-shadow: inset 0px -15px 8px -8px var(--primaryBackground-color); */
 }
 
 /* .showcase:before {
@@ -81,8 +79,11 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  
 } */
+
+.hello {
+  height: 100vh;
+}
 
 .showcase .showcase-inner {
   display: flex;
