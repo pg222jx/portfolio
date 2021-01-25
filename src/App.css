@@ -65,7 +65,7 @@ a {
   content:'';
   background: url(./images/painting.jpg) no-repeat center center/cover;
   position: absolute;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   top: 0;
   left: 0;
   width: 100%;
