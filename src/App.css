@@ -377,3 +377,12 @@ a {
   overflow:auto;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+      background: url(./images/painting.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  /* background-size: cover; */
+  }
+}
