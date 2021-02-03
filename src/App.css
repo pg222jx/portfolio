@@ -31,6 +31,11 @@
   to { box-shadow: none; }
 }
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -65,7 +70,6 @@ a {
   letter-spacing: 2px;
   position: relative;
 }
-
 
 .showcase {
   height: 100vh;
@@ -105,7 +109,6 @@ a {
 .showcase .showcase-outer {
   color: #1f1e38;
   text-align: center;
-  /* background-color: var(--primaryBackground-color); */
   margin-bottom: 10rem;
   margin-top: 5rem;
   position:relative;
@@ -113,7 +116,11 @@ a {
 
 .showcase h1 {
   font-size: 4rem;
-  letter-spacing: 4px
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 3.5s steps(30, end);
 }
 
 .showcase h2 {

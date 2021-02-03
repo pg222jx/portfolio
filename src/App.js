@@ -19,7 +19,7 @@ import PostList from './components/PostList'
 function App() {
   return (
     <Router>
-      <div className="showcase">
+      <header className="showcase">
         <Navbar/>
         <Switch>
         <Route path="/posts" exact component={PostList} />
@@ -34,7 +34,7 @@ function App() {
         <Route path="/create" exact component={CreatePost} />
         <Route path="/edit" exact component={EditPost} />
         <Route path="/delete" exact component={DeletePost} />
-      </div>
+      </header>
     </Router>
   );
 }
