@@ -44,7 +44,9 @@
 
 body {
   background: url(./images/painting.jpg) no-repeat center center/cover;
+   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center; 
 }
 
 body::before{
@@ -61,7 +63,6 @@ a {
 }
 
 .container {
-  /* max-width: 960px; */
   max-width: 100vh;
   margin: auto;
   overflow: hidden;
@@ -69,6 +70,7 @@ a {
   font-family: var(--primary-font);
   letter-spacing: 2px;
   position: relative;
+  animation: 1.5s ease-in 0s 1 fadeIn;
 }
 
 .showcase {
@@ -93,11 +95,8 @@ a {
   justify-content: center;
   text-align: center;
   height: 100vh;
-}
-
-.showcase-inner {  
-  animation: 1.5s ease-in 0s 1 fadeIn;
   padding: 30px;
+  /* animation: 1.5s ease-in 0s 1 fadeIn; */
 }
 
 .showcase-outer a {  
@@ -105,8 +104,7 @@ a {
   margin-left: 0.5rem;
 }
 
-
-.showcase .showcase-outer {
+.showcase-outer {
   color: #1f1e38;
   text-align: center;
   margin-bottom: 10rem;
