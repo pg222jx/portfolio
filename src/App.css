@@ -73,11 +73,6 @@ a {
   animation: 1.5s ease-in 0s 1 fadeIn;
 }
 
-.showcase {
-  height: 100vh;
-  position: relative;
-}
-
 /* .showcase:before {
   content:''; */
   /* background: url(./images/painting.jpg) no-repeat center center/cover; */
@@ -112,10 +107,16 @@ a {
   position:relative;
 }
 
+.showcase {
+  height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
 .showcase h1 {
   font-size: 4rem;
   overflow: hidden;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   margin: 0 auto;
   letter-spacing: .15em;
   animation: typing 3.5s steps(30, end);
