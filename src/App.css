@@ -414,6 +414,22 @@ a {
   border-color: lightblue;
 }
 
+/* .resume {
+  background: url(./images/resume.jpg) no-repeat center center fixed;
+  height: 100vh;
+ 
+} */
+
+/* 
+.resume::before {
+  background-color: var(--primary-color);
+  content: '';
+  display: block;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+} */
+
 @media only screen and (max-width: 600px) {
   body {
       background: url(./images/painting.jpg) no-repeat center center/cover;

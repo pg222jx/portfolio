@@ -5,8 +5,9 @@ class Resume extends Component {
 
     render() { 
         return (
-            // <header className="showcase">
+            // <header className="resume">
             <div className="container showcase-inner">
+                <div className="resume">
               <h1>Resume</h1>
               <h2>Languages</h2>
               <div className="row">
@@ -52,6 +53,7 @@ class Resume extends Component {
               <div className="row">
                 <div className="column left"></div>
                 <div className="column right"></div>
+              </div>
               </div>
             </div>
           // </header>
