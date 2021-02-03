@@ -304,6 +304,10 @@ a {
   padding: 0.5rem;
 }
 
+.contact {
+  text-align: left;
+}
+
 .codePortfolio {
   /* max-width: 70vw; */
   border-top: solid whitesmoke;
