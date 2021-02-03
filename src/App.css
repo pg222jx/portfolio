@@ -381,4 +381,9 @@ a {
   body {
       background: url(./images/painting.jpg) no-repeat center center/cover;
   }
+
+  .codePics {
+    max-width: 80%;
+    min-width: 20%;
+  }
 }
