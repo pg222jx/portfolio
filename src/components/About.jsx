@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import profilePic from '../images/profile.jpg'
 
 class Blog extends Component {
@@ -20,7 +21,7 @@ class Blog extends Component {
               Yes, I will be fresh out of university in june and my experience in working with programming is limited. But I am eager to learn and have been told to be  a fast learner.
               <br/><br/>If you want to contact me or learn more about me don't hesitate to check out my <a href="https://www.linkedin.com/in/pernilla-g%C3%B6th-69027319b/" target="_blanc">LinkedIn page!</a>
               </p>
-              <a href="https://docs.google.com/document/d/16SugJKIyc6cJPo5Wt9CwZe1q5FzU_559Xre8Td7LnCQ/edit#heading=h.61e3cm1p1fln" target="_blanc" className="btn">Resume</a>
+              <Link to="/resume" className="btn">Resume</Link>
               </div>
             </div>
           // </header>
