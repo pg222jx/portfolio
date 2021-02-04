@@ -7,8 +7,9 @@ class Resume extends Component {
         return (
             // <header className="resume">
             <div className="container showcase-inner">
+              
                 <div className="resume">
-              <h1>Resume</h1>
+                <h1>Resume</h1>
               <h2>Languages</h2>
               <div className="row">
                 <div className="column left">

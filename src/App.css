@@ -389,36 +389,38 @@ a {
 
 .column {
   flex: 50%;
-  width: 20vw;
+  width: auto;
+  
 }
 
 .left {
   text-align: right;
   padding-right: 15px;
   border-right: solid;
-  border-color: lightblue;
+  border-color: var(--overlay-color);
+  border-radius: 5px 0 0 5px;
 }
 
 .right {
   text-align: left;
   padding-left: 15px;
   border-left: solid;
-  border-color: lightblue;
+  border-color: var(--overlay-color);
+  border-radius: 0 5px 5px 0;
 }
 
 .middle {
   text-align: center;
-  /* padding-left: 15px; */
   border-left: solid;
   border-right: solid;
-  border-color: lightblue;
+  border-color: var(--overlay-color);
 }
 
-/* .resume {
-  background: url(./images/resume.jpg) no-repeat center center fixed;
-  height: 100vh;
- 
-} */
+.resume {
+  background-color: var(--primary-color);
+  overflow:  auto;
+  width: 80vw;
+}
 
 /* 
 .resume::before {
