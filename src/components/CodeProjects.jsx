@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Portfolio from './CodePortfolio/Portfolio'
+// import Portfolio from './CodePortfolio/Portfolio'
 import PHPBlog from './CodePortfolio/PHPBlog'
 import Pandemaniac from './CodePortfolio/Pandemaniac'
 import CardGameSimulation from './CodePortfolio/CardGameSimulation'
@@ -15,7 +15,7 @@ class CodeProjects extends Component {
 
         return (
             <div className="container showcase-outer">
-              <Portfolio/>
+              {/* <Portfolio/> */}
               <Pandemaniac/>
               <Desktop/>
               <PHPBlog/>
