@@ -391,7 +391,6 @@ a {
 .column {
   flex: 50%;
   width: auto;
-  
 }
 
 .left {
@@ -421,21 +420,18 @@ a {
   width: 80vw;
   padding-left: 1rem;
   padding-right: 1rem;
+
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.resume::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
 }
 
 .resumeTitle {
   border-bottom: solid;
 }
-
-/* 
-.resume::before {
-  background-color: var(--primary-color);
-  content: '';
-  display: block;
-  height: 100vh;
-  position: fixed;
-  width: 100vw;
-} */
 
 @media only screen and (max-width: 600px) {
   body {
@@ -449,8 +445,6 @@ a {
 
   .resume {
     width: 100vw;
-    /* padding-left: 0;
-    padding-right: 0; */
   }
   .remove {
     display: inline-block;
