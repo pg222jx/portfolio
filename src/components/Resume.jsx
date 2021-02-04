@@ -44,12 +44,12 @@ class Resume extends Component {
 
               <h2>Education</h2>
               <p>2019-2021</p>
-              <div className="row">
-                <div className="column left">
+              <div className="row remove">
+                <div className="column left align">
                   <h3>Web Developer</h3>
                   <h4>Linnaeus University</h4>
                 </div>
-                <div className="column right">
+                <div className="column right align">
                 <p>Just started my last term  to become  a Web Developer. 
                   I have studied software quality, testing,  analysis and design together with learning different languages and frameworks.
                   The last term focuses on  group projects, software architectures and Internet of Things.</p>
@@ -57,12 +57,12 @@ class Resume extends Component {
               </div>
 
               <p>2013-2014</p>
-              <div className="row">
-                <div className="column left">
+              <div className="row remove">
+                <div className="column left align">
                   <h3>Literary Studies</h3>
                   <h4>Gothenburg University</h4>
                 </div>
-                <div className="column right">
+                <div className="column right align">
                 <p>What can literature tell us about people's thoughts and conditions throughout history? Why do certain texts live on, and how do you really determine what is good literature?
                 We immersed ourselves in literary classics and at the same time problematized the concept of classics and questions about canon and literary history writing.
                 </p>
@@ -71,12 +71,12 @@ class Resume extends Component {
 
               <h2>Employment</h2>
               <p>2017-PRESENT</p>
-              <div className="row">
-                <div className="column left">
+              <div className="row remove">
+                <div className="column left align">
                   <h3>Optician assistant</h3>
                   <h4>Synsam</h4>
                 </div>
-                <div className="column right">
+                <div className="column right align">
                   <p>To be good in this job you need to have skills in customer service as well as have a huge understanding of the technical aspects of optics. 
                     You need to take this knowledge and present it to customers with patience.
                     I made decisions together with the opticians every day to make sure that how the optic should work and how the customer feels are both equally measured. </p>
@@ -84,12 +84,12 @@ class Resume extends Component {
               </div>
               
               <p>2011-2017</p>
-              <div className="row">
-                <div className="column left">
+              <div className="row remove align">
+                <div className="column left align">
                   <h3>Seller, Barista</h3>
                   <h4>Jeans Company, Espresso House & Nöjds Confectionery</h4>
                 </div>
-                <div className="column right">
+                <div className="column right align">
                 <p>Stress resistance, customer service and always a smile on my face.</p>
                 </div>
               </div>

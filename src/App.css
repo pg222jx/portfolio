@@ -449,7 +449,15 @@ a {
 
   .resume {
     width: 100vw;
-    padding-left: 0;
-    padding-right: 0;
+    /* padding-left: 0;
+    padding-right: 0; */
+  }
+  .remove {
+    display: inline-block;
+  }
+
+  .align {
+    text-align: center;
+    border: none;
   }
 }
