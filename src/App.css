@@ -286,7 +286,6 @@ a {
 }
 
 .codePortfolio {
-  /* max-width: 70vw; */
   border-top: solid whitesmoke;
   margin-top: 2rem;
   padding: 1rem;
@@ -301,7 +300,7 @@ a {
 }
 
 .profilePic:hover{
-  transform: scale(2.5) translate(0px, 45px);
+  transform: scale(2.5) translate(0px, 35px);
 }
 
 .arrowDown {
