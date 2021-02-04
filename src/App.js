@@ -31,7 +31,7 @@ function App() {
         <Route path="/about" exact component={About} />
         <Route path="/resume" exact component={Resume} />
         <Route path="/contact" exact component={Contact} />
-        <Route path="/creativity" exact component={Creativity} />
+        <Route path="/paintings" exact component={Creativity} />
         <Route path="/admin" exact component={Admin} />
         <Route path="/create" exact component={CreatePost} />
         <Route path="/edit" exact component={EditPost} />

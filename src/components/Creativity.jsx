@@ -1,17 +1,24 @@
 import React, { Component } from 'react'
+import PaintingProjects from './PaintingProjects'
 
 class Creativity extends Component {
-    state = {  }
 
-    render() { 
+    render() {
+      const scrollDown = () => {
+        const child = document.querySelector('.showcase-outer')
+        child.scrollIntoView({ behavior: 'smooth' })
+      } 
+
         return (
-            <header className="showcase">
-            <div className="container showcase-inner">
-              <h1>Creativity portfolio</h1>
-              <p>Here I will show you all of the creative stuff I do. <br/>
-              Photography, paintings and maybe sometimes a song or two.</p> 
-            </div>
-          </header>
+              <React.Fragment>
+                <div className="container showcase-inner">
+                  <h1>Painting projects</h1>
+                  <p>Lorem Ipsum</p>
+                  <br/>
+                  <button className="arrowDown" onClick={scrollDown}>︾</button>
+                </div>
+                <PaintingProjects/>
+            </React.Fragment>
         )
     }
 }

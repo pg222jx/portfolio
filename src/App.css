@@ -408,6 +408,12 @@ a {
   border-bottom: solid;
 }
 
+.paintingPic {
+  border-radius: 6px;
+  width: 50vw;
+  box-shadow: 5px 5px 18px rgb(32, 32, 32);
+}
+
 @media only screen and (max-width: 600px) {
   body {
       background: url(./images/painting.jpg) no-repeat center center/cover;
